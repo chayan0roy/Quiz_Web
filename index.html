@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link href="./assets/photo.png" rel="shortcut icon" type="image/x-icon">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<section class="frontPage">
+			<button type="button" class="btn" onclick="startBtn()">Start</button>
+		</section>
+		<section class="rulesPage hide">
+			<header>
+				<h1 class="rulesHeading">Rules Of Qiuz Section</h1>
+			</header>
+			<main>
+				<div>1. You will have only 15 seconds per each question.</div>
+				<div>2. Once you select your answer it can not be undone.</div>
+				<div>3. You can not select any option once time goes off.</div>
+				<div>4. You can not exit from the qiuz_section while you are playing.</div>
+				<div>5. You will get points on the basic of your correct answer.</div>
+			</main>
+			<footer>
+				<button type="button" class="btn" onclick="backBtn()">Back</button>
+				<button type="button" class="btn" onclick="continueBtn()">Continue</button>
+			</footer>
+		</section>
+		<section class="questions_page hide">
+			<header>
+				<h2>Exam Started</h2>
+				<div class="time_lines_box">
+					<div class="time_lines"></div>
+				</div>
+				<div class="timer_part">
+					<h2>Time Out</h2>
+					<div class="timer">00</div>
+				</div>
+			</header>
+			<main>
+				<div class="question_part"></div>
+				<div class="options_part"></div>
+			</main>
+			<footer>
+				<div class="question_counter"></div>
+				<button type="button" class="btn next_Btn" onclick="nextBtn()">Next >></button>
+			</footer>
+		</section>
+		<section class="reaultPage hide">
+			<div class="message_part">
+				<h2>Result</h2>
+				<div>
+					<h3>Currect</h3>
+					<span class="currect_ans"></span>
+				</div>
+				<div>
+					<h3>Wrong</h3>
+					<span class="wrong_ans"></span>
+				</div>
+				<div>
+					<h3>Your Score is</h3>
+					<span class="score"></span>
+				</div>
+			</div>
+			<button type="button" class="btn" onclick="exitBtn()">Exit</button>
+		</section>
+		<script src="script.js"></script>
+		<script src="question_list.js"></script>
+	</body>
+</html>
